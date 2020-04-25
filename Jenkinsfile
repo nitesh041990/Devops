@@ -11,9 +11,10 @@ pipeline {
                 sh "echo 'hi tester' "
             }
         }
-        stage('Deploy') { 
+        stage('Workspace cleanup') { 
             steps {
-                sh "echo 'test me' "
+                sh "echo 'Cleaning workspace' "
+		clenWs()
             }
         }
     }
