@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                sh "echo 'hi tester' "
+                h "echo 'hi tester' "
             }
         }
         stage('Workspace cleanup') { 
